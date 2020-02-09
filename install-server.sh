@@ -250,7 +250,7 @@ fi
 # bootloader extra cmd
 eval $(blkid -o export /dev/${blockdev}${partitionextra}${rootpart})
 ROOTUUID=$UUID
-grubcmd="root=/dev/disk/by-uuid/$ROOTUUID rootflags=$rootmountoptions"
+grubcmd="root=/dev/disk/by-uuid/$ROOTUUID rootflags=$rootmountoptions ro"
 grubcmd="${grubcmd//\//\\\/}"
 
 ## add grub GRUB_CMDLINE_LINUX
