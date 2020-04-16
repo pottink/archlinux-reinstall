@@ -11,6 +11,7 @@ docker-compose
 ethtool
 flake8
 git
+git-lfs
 go-pie
 htop
 inetutils
